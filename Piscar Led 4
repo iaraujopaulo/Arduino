@@ -8,9 +8,12 @@ bool ligado = 1, desligado = 0;
 void setup() {
  pinMode (led, OUTPUT);
  pinMode (led_verm, OUTPUT);
+ Serial.begin(9600);
+ Serial.println("Inicializando...");
 }
 
 void loop() {
+Serial.println("Estou aqui");
   digitalWrite(led, LIGADO);
   digitalWrite(led_verm, off);
   delay(500);
