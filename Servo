@@ -1,0 +1,28 @@
+#include <servo.h>
+SERVO SERVOTESTE;
+SERVO SERVOTESTE;
+SERVO SERVOTESTE;
+SERVO SERVOTESTE;
+
+void setup() {
+ serial.begin(9600);
+ SERVOTESTE.attach;
+ SERVOTESTE.attach;
+ SERVOTESTE.attach;
+ SERVOTESTE.attach;
+}
+
+void loop() {
+  int POT = AnalogRead(AD);
+  int POSSERVO = map(POT, 0, 1023, 0, 180);
+  Serial.println ("Posicao do SERVO" + String (POSSERVO)); 
+  int POT = AnalogRead(AD);
+  int POSSERVO = map(POT, 0, 1023, 0, 180);
+  Serial.println ("Posicao do SERVO" + String (POSSERVO)); 
+  int POT = AnalogRead(AD);
+  int POSSERVO = map(POT, 0, 1023, 0, 180);
+  Serial.println ("Posicao do SERVO" + String (POSSERVO)); 
+  int POT = AnalogRead(AD);
+  int POSSERVO = map(POT, 0, 1023, 0, 180);
+  Serial.println ("Posicao do SERVO" + String (POSSERVO)); 
+}
