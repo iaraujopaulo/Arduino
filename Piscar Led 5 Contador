@@ -1,0 +1,26 @@
+//arduino.h
+byte led = 13, led_verm = 12;
+char teste = 's';
+bool ligado = 1, desligado = 0;
+# define on true
+# define off false
+int contador = 0;
+
+void setup() {
+ pinMode (led, OUTPUT);
+ pinMode (led_verm, OUTPUT);
+ Serial.begin(9600);
+ Serial.println("Inicializando...");
+}
+
+void loop() {
+ contador = contador + 1;
+ Serial.print("contagem");
+ Serial.println(contador);
+  digitalWrite(led, HIGH);
+  digitalWrite(led_verm, off);
+  delay(500);
+  digitalWrite(led, LOW);
+  digitalWrite(led_verm, on);
+  delay(200);
+}
