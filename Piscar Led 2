@@ -1,0 +1,15 @@
+//arduino.h
+byte led 13;
+char teste ='s';
+bool ligado = 1, desligado = 0;
+
+void setup() {
+ pinMode (led, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(led, HIGH);
+  delay(1000);
+  digitalWrite(led, LOW);
+  delay(1000);
+}
